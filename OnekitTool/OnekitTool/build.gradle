@@ -1,15 +1,16 @@
 apply plugin: 'com.android.library'
 
+
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
-
+        multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
     }
@@ -28,5 +29,5 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
-    compile files('libs/org.apache.http.legacy.jar')
+//    compile files('libs/org.apache.http.legacy.jar')
 }
